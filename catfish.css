@@ -282,6 +282,10 @@ tt {
 .CodeMirror div.CodeMirror-cursor {
   border-left: 1px solid #e4629a;
 }
+.CodeMirror pre.CodeMirror-line {
+  line-height: 1.25rem;
+  letter-spacing: 0.025rem;
+}
 #write pre.md-meta-block {
   min-height: 35px;
   padding: 0.5em 1em;
