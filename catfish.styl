@@ -145,22 +145,26 @@ blockquote
   font-family font-serif
   color #555
 
-blockquote blockquote
-  padding-right 0
+  blockquote
+    padding-right 0
 
 // code fences
-.md-fences, code, tt
-  margin 0 0.2em
-  padding 0 0.3em
-  background #263238
-  font-family font-mono, font-sans
-  color rgba(233, 237, 237, 1)
-  // text-shadow 0 1px #eee
-
 .md-fences
   margin 15px auto
   padding 0.7em 1em
+  color rgba(233, 237, 237, 1)
+  background #263238
+  font-family font-mono, font-sans
   text-shadow none
+  // text-shadow 0 1px #eee
+
+// code inline
+code
+  background-color #f3f4f4
+  padding 0 2px 0
+  border 1px solid #e7eaed
+  border-radius 3px
+  font-size 0.9em
 
 @import 'catfish/material'
 
