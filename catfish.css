@@ -42,6 +42,12 @@
   font-weight: bold;
   src: local('mononoki Bold Italic'), url("catfish/mononoki-BoldItalic.woff");
 }
+@font-face {
+  font-family: Cascadia Mono PL;
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cascadia Mono PL'), url("catfish/CascadiaMonoPL.ttf");
+}
 html {
   font-size: 16px;
 }
@@ -143,7 +149,7 @@ tt {
   margin: 0 0.2em;
   padding: 0 0.3em;
   background: #263238;
-  font-family: mononoki, monospace;
+  font-family: Cascadia Mono PL, mononoki, monospace;
   color: #e9eded;
 }
 .md-fences {
