@@ -1,232 +1,222 @@
-//custom fonts
+// custom fonts
+@font-face
+  font-family Source Han Sans SC
+  font-weight normal
+  src local('Source Han Sans SC Regular'), url('catfish/SourceHanSansSC-Regular.otf')
 
 @font-face
-    font-family Source Han Sans SC
-    font-weight normal
-    src local('Source Han Sans SC Regular'),url(catfish/SourceHanSansSC-Regular.otf)
+  font-family Source Han Sans
+  font-weight bold
+  src local('Source Han Sans SC Bold'), url('catfish/SourceHanSansSC-Bold.otf')
 
 @font-face
-    font-family Source Han Sans
-    font-weight bold
-    src local('Source Han Sans SC Bold'),url(catfish/SourceHanSansSC-Bold.otf)
+  font-family Source Han Serif
+  font-weight normal
+  src local('Source Han Serif SC Regular'), url('catfish/SourceHanSerifSC-Regular.otf')
 
 @font-face
-    font-family Source Han Serif
-    font-weight normal
-    src local('Source Han Serif SC Regular'),url(catfish/SourceHanSerifSC-Regular.otf)
-  
-@font-face
-    font-family Source Han Serif
-    font-weight bold
-    src local('Source Han Serif SC Bold'),url(catfish/SourceHanSerifSC-Bold.otf)
+  font-family Source Han Serif
+  font-weight bold
+  src local('Source Han Serif SC Bold'), url('catfish/SourceHanSerifSC-Bold.otf')
 
 @font-face
-    font-family mononoki
-    font-style normal
-    font-weight normal
-    src local('mononoki Regular'),url(catfish/mononoki-Regular.woff)
+  font-family mononoki
+  font-style normal
+  font-weight normal
+  src local('mononoki Regular'), url('catfish/mononoki-Regular.woff')
 
 @font-face
-    font-family mononoki
-    font-style italic
-    font-weight normal
-    src local('mononoki Italic'),url(catfish/mononoki-Italic.woff)
+  font-family mononoki
+  font-style italic
+  font-weight normal
+  src local('mononoki Italic'), url('catfish/mononoki-Italic.woff')
 
 @font-face
-    font-family mononoki
-    font-style normal
-    font-weight bold
-    src local('mononoki Bold'),url(catfish/mononoki-Bold.woff)
+  font-family mononoki
+  font-style normal
+  font-weight bold
+  src local('mononoki Bold'), url('catfish/mononoki-Bold.woff')
 
 @font-face
-    font-family mononoki
-    font-style italic
-    font-weight bold
-    src local('mononoki Bold Italic'),url(catfish/mononoki-BoldItalic.woff)
+  font-family mononoki
+  font-style italic
+  font-weight bold
+  src local('mononoki Bold Italic'), url('catfish/mononoki-BoldItalic.woff')
 
 @font-face
-    font-family Cascadia Mono PL
-    font-style normal
-    font-weight normal
-    src local('Cascadia Mono PL'),url(catfish/CascadiaMonoPL.ttf)
+  font-family Cascadia Mono PL
+  font-style normal
+  font-weight normal
+  src local('Cascadia Mono PL'), url('catfish/CascadiaMonoPL.ttf')
 
 font-sans = Source Han Sans SC, sans-serif
-
 font-serif = Source Han Serif SC, serif
-
 font-mono = Cascadia Mono PL, mononoki, monospace
 
 html
-    font-size 16px
+  font-size 16px
 
 body
-    background #fff
-    font-family font-sans
-    color #555
+  background #fff
+  font-family font-sans
+  color #555
 
 #write
-    max-width 60em
-    margin 0 auto
-    padding 20px 30px 50px
+  max-width 60em
+  margin 0 auto
+  padding 20px 30px 50px
 
-//typography
-
+// typography
 h1, h2, h3, h4, h5, h6
-    position relative
-    margin-top 1em
-    margin-bottom 1em
-    font-weight bold
-    line-height 1.4em
+  position relative
+  margin-top 1em
+  margin-bottom 1em
+  font-weight bold
+  line-height 1.4em
 
 h1
-    font-size 2em
-    line-height 1.2em
+  font-size 2em
+  line-height 1.2em
 
 h2
-    font-size 1.5em
-    line-height 1.225em
+  font-size 1.5em
+  line-height 1.225em
 
 h3
-    font-size 1.3em
-    line-height 1.43em
+  font-size 1.3em
+  line-height 1.43em
 
 h4
-    font-size 1.2em
+  font-size 1.2em
 
 h5
-    font-size 1em
+  font-size 1em
 
 h6
-    font-size 1em
-    color #999
+  font-size 1em
+  color #999
 
 hr
-    border 1px solid #ddd
+  border 1px solid #ddd
 
-//links
+// links
+a
+  text-decoration none
+  color #258fb8
 
 a
-    text-decoration none
-    color #258fb8
+  &:hover, &:active
+    text-decoration underline
 
-a
-    &:hover,&:active
-        text-decoration underline
-
-//lists
-
-ul,ol
-    padding-left 2em
+// lists
+ul, ol
+  padding-left 2em
 
 .task-list
-	padding-left 2em
+  padding-left 2em
 
 .task-list-item
-	padding-left 1.6em
+  padding-left 1.6em
 
 .task-list-item
-    input
-        top 3px
-        left 8px
+  input
+    top 3px
+    left 8px
 
-//tables
-
+// tables
 table
-    width: 100%
-    border-collapse: collapse
-    border-spacing: 0
-    th
-        font-weight: bold
-        border-bottom: 3px solid #ddd
-        padding-bottom: 0.5em
-    td
-        border-bottom: 1px solid #ddd
-        padding: 10px 0
+  width 100%
+  border-collapse collapse
+  border-spacing 0
 
+  th
+    font-weight bold
+    border-bottom 3px solid #ddd
+    padding-bottom 0.5em
 
-//blockquotes
+  td
+    border-bottom 1px solid #ddd
+    padding 10px 0
 
+// blockquotes
 blockquote
-    border-left 5px solid #ddd
-    padding-left 0.5em
-    font-family font-serif
-    color: #555
+  border-left 5px solid #ddd
+  padding-left 0.5em
+  font-family font-serif
+  color #555
 
 blockquote blockquote
-    padding-right 0
+  padding-right 0
 
-//code fences
-
-.md-fences,code,tt
-    margin 0 0.2em
-    padding 0 0.3em
-    background #263238
-    font-family font-mono, font-sans
-    color rgba(233, 237, 237, 1)
-    // text-shadow 0 1px #eee
+// code fences
+.md-fences, code, tt
+  margin 0 0.2em
+  padding 0 0.3em
+  background #263238
+  font-family font-mono, font-sans
+  color rgba(233, 237, 237, 1)
+  // text-shadow 0 1px #eee
 
 .md-fences
-    margin 15px auto
-    padding 0.7em 1em
-    text-shadow none
+  margin 15px auto
+  padding 0.7em 1em
+  text-shadow none
 
-@import "catfish/material"
+@import 'catfish/material'
 
 .CodeMirror div.CodeMirror-cursor
-    border-left 1px solid #E4629A
+  border-left 1px solid #E4629A
 
 .CodeMirror pre.CodeMirror-line
-    line-height 1.25rem
-    letter-spacing .025rem
+  line-height 1.25rem
+  letter-spacing 0.025rem
 
 // YAML front matters
 #write pre.md-meta-block
-    min-height 35px
-    padding 0.5em 1em
-    white-space pre
-    border 0px
+  min-height 35px
+  padding 0.5em 1em
+  white-space pre
+  border 0px
+  border-left 30px #f8f8f8 solid
+  border-right 30px #f8f8f8 solid
+  width 100vw
+  max-width calc(100% + 60px)
+  margin-left -30px
+  margin-bottom 2em
+  margin-top -2010px
+  padding-top 2000px
+  padding-bottom 10px
+  line-height 1.5em
+  color #7a7a7a
+  background-color #fafafa
+  font-family font-mono, font-sans
+  font-weight 300
+  clear both
+  padding-left 0
+  font-size 0.875rem
 
-    border-left 30px #f8f8f8 solid
-    border-right 30px #f8f8f8 solid
-    width 100vw
-    max-width calc(100% + 60px)
-
-    margin-left -30px
-    margin-bottom 2em
-    margin-top -2010px
-    padding-top 2000px
-    padding-bottom 10px
-    line-height 1.5em
-    color #7a7a7a
-    background-color #fafafa
-    font-family font-mono, font-sans
-    font-weight 300
-    clear both
-    padding-left 0
-    font-size 0.875rem
-
-//image meta
+// image meta
 .md-image>.md-meta
-    color inherit
+  color inherit
 
 header, .context-menu, .megamenu-content, footer
-    font-family font-sans
+  font-family font-sans
 
-//print
+// print
 @media print
-    html
-        font-size 13px
-    table,
-    pre
-        page-break-inside: avoid;
-    pre
-        word-wrap break-word
+  html
+    font-size 13px
 
-//controller
+  table, pre
+    page-break-inside avoid
+
+  pre
+    word-wrap break-word
+
+// controller
 header, .context-menu, .megamenu-content, footer
-    font-family Helvetica Neue,Helvetica,Segoe UI,Arial,sans-serif
+  font-family Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif
 
-//diagram
+// diagram
 .md-diagram-panel-preview
   color #263238
-  
