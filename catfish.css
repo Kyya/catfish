@@ -282,14 +282,29 @@ tt {
 .CodeMirror div.CodeMirror-cursor {
   border-left: 1px solid #e4629a;
 }
-
-  #write pre.md-meta-block {
-      padding: 1em;
-      background-color: #fff;
-      border-bottom: 1px dashed #ddd;
-      color: #80cbc4;
-      margin-top: 0 !important;
-  }
+#write pre.md-meta-block {
+  min-height: 35px;
+  padding: 0.5em 1em;
+  white-space: pre;
+  border: 0px;
+  border-left: 30px #f8f8f8 solid;
+  border-right: 30px #f8f8f8 solid;
+  width: 100vw;
+  max-width: calc(100% + 60px);
+  margin-left: -30px;
+  margin-bottom: 2em;
+  margin-top: -2010px;
+  padding-top: 2000px;
+  padding-bottom: 10px;
+  line-height: 1.5em;
+  color: #7a7a7a;
+  background-color: #fafafa;
+  font-family: Cascadia Mono PL, mononoki, monospace, Source Han Sans SC, sans-serif;
+  font-weight: 300;
+  clear: both;
+  padding-left: 0;
+  font-size: 0.875rem;
+}
 .md-image>.md-meta {
   color: inherit;
 }
