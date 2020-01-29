@@ -149,7 +149,7 @@ tt {
   margin: 0 0.2em;
   padding: 0 0.3em;
   background: #263238;
-  font-family: Cascadia Mono PL, mononoki, monospace;
+  font-family: Cascadia Mono PL, mononoki, monospace, Source Han Sans SC, sans-serif;
   color: #e9eded;
 }
 .md-fences {
