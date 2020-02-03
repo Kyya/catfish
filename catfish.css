@@ -56,6 +56,10 @@ body {
   font-family: Source Han Sans SC, sans-serif;
   color: #555;
 }
+#file-library {
+  font-family: Cascadia Mono PL, mononoki, monospace, Source Han Sans SC, sans-serif;
+  overflow: hidden;
+}
 #write {
   max-width: 60em;
   margin: 0 auto;
